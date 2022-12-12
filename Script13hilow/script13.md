@@ -2,25 +2,58 @@
 * Script original sin cambios:
 
 ```bash
-echon()
-{
-  echo "$*" | awk '{ printf "%s", $0 }'
-}
+#!/bin/bash
 
-echo -n $1
+biggest=100                   # maximum number possible
+guess=0                       # guessed by player
+guesses=0                     # number of guesses made
+number=$(( $RANDOM % $biggest + 1 ))    # random number, between 1 and $biggest
+echo "Guess a number between 1 and $biggest"
+
+while [ "$guess" -ne $number ] ; do
+  /bin/echo -n "Guess? " ; read guess
+  if [ "$guess" -lt $number ] ; then
+    echo "... bigger!"
+  elif [ "$guess" -gt $number ] ; then
+    echo "... smaller!"
+  fi
+  guesses=$(( $guesses + 1 ))
+done
+
+echo "Right!! Guessed $number in $guesses guesses."
+
+exit 0
 ```
 
 * Cambios realizados al Script:
 
-Eliminamos la funcion echon() y solo dejamos lo que esta dentro
+No requiere correcciones
 
 * Script corregido:
 ```bash
-echon()
 #!/bin/bash
-  echo "$*" | awk '{ printf "%s", $0 }'
+
+biggest=100               
+guess=0                     
+guesses=0                     
+number=$(( $RANDOM % $biggest + 1 ))   
+echo "Guess a number between 1 and $biggest"
+
+while [ "$guess" -ne $number ] ; do
+  /bin/echo -n "Guess? " ; read guess
+  if [ "$guess" -lt $number ] ; then
+    echo "... bigger!"
+  elif [ "$guess" -gt $number ] ; then
+    echo "... smaller!"
+  fi
+  guesses=$(( $guesses + 1 ))
+done
+
+echo "Right!! Guessed $number in $guesses guesses."
+
+exit 0
 ```
 
 * Resultado al ejecutar:
 
-  ![alt text](scpt8.png)
+  ![alt text](scpt13.png)

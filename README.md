@@ -31,7 +31,7 @@ Repositorio de 50 scripts sin orden de bash
   25. Script 54: getlinks
   26. Script 56: zipcode
   27. Script 58: weather
-  28. Script 29: moviedata
+  28. Script 59: moviedata
   29. Script 60: convertcurrency
   30. Script 61: getbtcaddr
   31. Script 63: showCGIenv
@@ -46,11 +46,11 @@ Repositorio de 50 scripts sin orden de bash
   40. Script 85: states
   41. Script 86: isprime
   42. Script 89: stardropbox
-  43. Script 90:syncdropbox
-  44. Script 91:  slideshow
+  43. Script 90: syncdropbox
+  44. Script 91: slideshow
   45. Script 93: sayit
   46. Script 94: imagesize
   47. Script 95: watermark
   48. Script 96: frameit
   49. Script 98: geoloc
-  50. Script 99: dayinpast# test-git-ShuyBv
+  50. Script 99: dayinpast
