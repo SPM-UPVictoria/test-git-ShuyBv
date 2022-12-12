@@ -1,4 +1,6 @@
 # Scripts de Bash Unidad 4
+Alumno: Jesús Antonio Olazaran Mora
+Matricula: 2130035
 
 Repositorio de 50 scripts sin orden de bash
 
